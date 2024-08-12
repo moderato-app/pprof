@@ -25,11 +25,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/google/pprof/internal/binutils"
-	"github.com/google/pprof/internal/plugin"
-	"github.com/google/pprof/internal/symbolz"
-	"github.com/google/pprof/profile"
 	"github.com/ianlancetaylor/demangle"
+	"github.com/moderato-app/pprof/internal/binutils"
+	"github.com/moderato-app/pprof/internal/plugin"
+	"github.com/moderato-app/pprof/internal/symbolz"
+	"github.com/moderato-app/pprof/profile"
 )
 
 // Symbolizer implements the plugin.Symbolize interface.

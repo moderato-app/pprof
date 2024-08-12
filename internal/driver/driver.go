@@ -26,9 +26,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/google/pprof/internal/plugin"
-	"github.com/google/pprof/internal/report"
-	"github.com/google/pprof/profile"
+	"github.com/moderato-app/pprof/internal/plugin"
+	"github.com/moderato-app/pprof/internal/report"
+	"github.com/moderato-app/pprof/profile"
 )
 
 // PProf acquires a profile, and symbolizes it using a profile

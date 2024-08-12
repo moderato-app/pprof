@@ -1,5 +1,5 @@
 # Description:
-#   Auto-imported from github.com/google/pprof/internal/proftest
+#   Auto-imported from github.com/moderato-app/pprof/internal/proftest
 
 licenses(["notice"])
 

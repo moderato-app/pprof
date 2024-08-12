@@ -21,10 +21,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/google/pprof/internal/binutils"
-	"github.com/google/pprof/internal/plugin"
-	"github.com/google/pprof/internal/symbolizer"
-	"github.com/google/pprof/internal/transport"
+	"github.com/moderato-app/pprof/internal/binutils"
+	"github.com/moderato-app/pprof/internal/plugin"
+	"github.com/moderato-app/pprof/internal/symbolizer"
+	"github.com/moderato-app/pprof/internal/transport"
 )
 
 // setDefaults returns a new plugin.Options with zero fields sets to

@@ -28,11 +28,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/pprof/internal/graph"
-	"github.com/google/pprof/internal/measurement"
-	"github.com/google/pprof/internal/plugin"
-	"github.com/google/pprof/internal/report"
-	"github.com/google/pprof/profile"
+	"github.com/moderato-app/pprof/internal/graph"
+	"github.com/moderato-app/pprof/internal/measurement"
+	"github.com/moderato-app/pprof/internal/plugin"
+	"github.com/moderato-app/pprof/internal/report"
+	"github.com/moderato-app/pprof/profile"
 )
 
 // webInterface holds the state needed for serving a browser based interface.
@@ -205,7 +205,7 @@ func defaultWebServer(args *plugin.HTTPServerArgs) error {
 	// We serve the ui at /ui/ and redirect there from the root. This is done
 	// to surface any problems with serving the ui at a non-root early. See:
 	//
-	// https://github.com/google/pprof/pull/348
+	// https://github.com/moderato-app/pprof/pull/348
 	mux := http.NewServeMux()
 	mux.Handle("/ui/", http.StripPrefix("/ui", handler))
 	mux.Handle("/", redirectWithQuery("/ui", http.StatusTemporaryRedirect))

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/pprof/internal/measurement"
+	"github.com/moderato-app/pprof/internal/measurement"
 	"github.com/stretchr/testify/assert"
 )
 

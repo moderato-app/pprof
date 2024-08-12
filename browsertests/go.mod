@@ -1,13 +1,13 @@
-module github.com/google/pprof/browsertests
+module github.com/moderato-app/pprof/browsertests
 
 go 1.19
 
 // Use the version of pprof in this directory tree.
-replace github.com/google/pprof => ../
+replace github.com/moderato-app/pprof => ../
 
 require (
 	github.com/chromedp/chromedp v0.9.2
-	github.com/google/pprof v0.0.0
+	github.com/moderato-app/pprof v0.0.0
 )
 
 require (

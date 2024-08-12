@@ -24,7 +24,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/google/pprof/internal/plugin"
+	"github.com/moderato-app/pprof/internal/plugin"
 )
 
 const (

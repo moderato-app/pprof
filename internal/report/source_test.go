@@ -23,8 +23,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/pprof/internal/binutils"
-	"github.com/google/pprof/profile"
+	"github.com/moderato-app/pprof/internal/binutils"
+	"github.com/moderato-app/pprof/profile"
 )
 
 func TestWebList(t *testing.T) {

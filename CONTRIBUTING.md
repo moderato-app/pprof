@@ -59,7 +59,7 @@ go test -v ./...
 
 When you wish to work with your own fork of the source (which is required to be
 able to create a pull request), you'll want to get your fork repo as another Git
-remote in the same `github.com/google/pprof` directory. Otherwise, if you'll `go
+remote in the same `github.com/moderato-app/pprof` directory. Otherwise, if you'll `go
 get` your fork directly, you'll be getting errors like `use of internal package
 not allowed` when running tests.  To set up the remote do something like
 

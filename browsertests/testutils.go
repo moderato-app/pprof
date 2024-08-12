@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/pprof/driver"
-	"github.com/google/pprof/profile"
+	"github.com/moderato-app/pprof/driver"
+	"github.com/moderato-app/pprof/profile"
 )
 
 func makeTestServer(t testing.TB, prof *profile.Profile) *httptest.Server {

@@ -20,9 +20,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/pprof/internal/plugin"
-	"github.com/google/pprof/internal/proftest"
-	"github.com/google/pprof/profile"
+	"github.com/moderato-app/pprof/internal/plugin"
+	"github.com/moderato-app/pprof/internal/proftest"
+	"github.com/moderato-app/pprof/profile"
 )
 
 func TestSymbolzURL(t *testing.T) {

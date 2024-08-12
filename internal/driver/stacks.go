@@ -19,7 +19,7 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/google/pprof/internal/measurement"
+	"github.com/moderato-app/pprof/internal/measurement"
 )
 
 // stackView generates the flamegraph view.

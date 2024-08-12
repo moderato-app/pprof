@@ -5,8 +5,8 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/google/pprof/internal/report"
-	"github.com/google/pprof/profile"
+	"github.com/moderato-app/pprof/internal/report"
+	"github.com/moderato-app/pprof/profile"
 )
 
 type Metrics struct {

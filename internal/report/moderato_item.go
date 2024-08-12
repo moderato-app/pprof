@@ -1,7 +1,7 @@
 package report
 
 import (
-	"github.com/google/pprof/internal/graph"
+	"github.com/moderato-app/pprof/internal/graph"
 )
 
 // ModeratoItem holds a single text report entry.

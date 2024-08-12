@@ -21,7 +21,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/google/pprof/internal/report"
+	"github.com/moderato-app/pprof/internal/report"
 )
 
 var (
