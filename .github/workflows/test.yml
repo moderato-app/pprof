@@ -3,7 +3,7 @@ name: Test
 on: [ push, pull_request, workflow_dispatch ]
 
 jobs:
-  test-action:
+  test:
     name: test
     runs-on: ubuntu-latest
     steps:
@@ -14,4 +14,4 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: 'stable'
-        run: go test ./...
+      - run: go test ./...
