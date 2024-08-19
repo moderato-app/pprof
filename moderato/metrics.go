@@ -10,9 +10,9 @@ import (
 )
 
 type Metrics struct {
-	items  []report.ModeratoItem
-	labels []string
-	total  int64
+	Items  []report.ModeratoItem
+	Labels []string
+	Total  int64
 }
 
 // GetMetricsFromFile returns the metrics data of either inuse_space or cpu
@@ -46,7 +46,7 @@ func GetMetrics(reader io.Reader) (*Metrics, error) {
 
 	o := report.Options{
 		OutputFormat: report.Text,
-		NodeFraction: 0.05,
+		NodeFraction: 0,
 		SampleType:   prof.DefaultSampleType,
 		SampleValue: func(s []int64) int64 {
 			return s[index]
@@ -61,9 +61,9 @@ func GetMetrics(reader io.Reader) (*Metrics, error) {
 	total := v.FieldByName("total").Int()
 
 	return &Metrics{
-		items:  items,
-		labels: labels,
-		total:  total,
+		Items:  items,
+		Labels: labels,
+		Total:  total,
 	}, nil
 
 }
