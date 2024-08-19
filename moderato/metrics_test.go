@@ -51,17 +51,17 @@ func TestItems(t *testing.T) {
 func getText(metrics *Metrics) (string, error) {
 	b := new(strings.Builder)
 
-	fmt.Fprintln(b, strings.Join(metrics.labels, "\n"))
+	fmt.Fprintln(b, strings.Join(metrics.Labels, "\n"))
 	fmt.Fprintf(b, "%10s %5s%% %5s%% %10s %5s%%\n",
 		"flat", "flat", "sum", "cum", "cum")
 	var flatSum int64
-	for _, item := range metrics.items {
+	for _, item := range metrics.Items {
 		inl := item.InlineLabel
 		if inl != "" {
 			inl = " " + inl
 		}
 		flatSum += item.Flat
-		total := metrics.total
+		total := metrics.Total
 		fmt.Fprintf(b, "%10d %s %s %10d %s  %s%s\n",
 			item.Flat, measurement.Percentage(item.Flat, total),
 			measurement.Percentage(flatSum, total),
