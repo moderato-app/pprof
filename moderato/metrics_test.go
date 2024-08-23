@@ -29,6 +29,20 @@ func TestItems(t *testing.T) {
 				"10000000  6.67%   100%   10000000  6.67%  syscall.syscall",
 			},
 		},
+		{
+			"./test.goroutine.019.pb.gz",
+			[]string{"37 total",
+				"34 91.89% 91.89%         34 91.89%  runtime.gopark",
+				"1  2.70% 94.59%          1  2.70%  runtime.goroutineProfileWithLabels",
+			},
+		},
+		{
+			"./test.pprof.alloc_objects.alloc_space.inuse_objects.inuse_space.015.pb.gz",
+			[]string{"160278937496 total",
+				"67097020760 41.86% 41.86% 67097020760 41.86%  go.etcd.io/raft/v3.(*MemoryStorage).Append",
+				"52698228258 32.88% 74.74% 52698228258 32.88%  go.etcd.io/raft/v3.(*MemoryStorage).Compact",
+			},
+		},
 	}
 	for _, tc := range tt {
 		t.Run("", func(t *testing.T) {
